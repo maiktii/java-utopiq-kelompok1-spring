@@ -10,13 +10,13 @@ public class EventRequest {
 
     private String description;
     private String location;
-    private Long capacity;
+    private int capacity;
 
 //    private String createdAt;
 //    private String updatedAt;
 //    private String deletedAt;
 
-    public EventRequest(String name, String title, String description, String location, Long capacity){
+    public EventRequest(String name, String title, String description, String location, int capacity){
         this.name = name; this.title = title; this.description = description;
         this.location = location; this.capacity = capacity;
     };
@@ -37,7 +37,7 @@ public class EventRequest {
         this.location = location;
     }
 
-    public void setCapacity(Long capacity) {
+    public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
 
@@ -57,7 +57,7 @@ public class EventRequest {
         return location;
     }
 
-    public Long getCapacity() {
+    public int getCapacity() {
         return capacity;
     }
 }

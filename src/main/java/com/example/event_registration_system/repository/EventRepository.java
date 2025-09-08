@@ -33,4 +33,7 @@ public class EventRepository {
     public Optional<Event> findById(Long id){
         return Optional.ofNullable(data.get(id));
     }
+
+    public void delete(Long id) { data.remove(id); }
+    public boolean exists(Long id) { return data.containsKey(id); }
 }
